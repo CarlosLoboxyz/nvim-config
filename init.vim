@@ -1,3 +1,4 @@
+set exrc
 set hidden
 set nowrap
 set pumheight=10
@@ -29,6 +30,7 @@ set termguicolors
 set scrolloff=8
 set updatetime=50
 set colorcolumn=80
+set signcolumn=yes
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 	Plug 'morhetz/gruvbox'
@@ -37,3 +39,4 @@ call plug#end()
 " Setup gruvbox
 colorscheme gruvbox
 highlight Normal guibg=none
+highlight SignColumn guibg=none
