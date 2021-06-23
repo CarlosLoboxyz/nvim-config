@@ -32,6 +32,8 @@ set updatetime=50
 set colorcolumn=80
 set signcolumn=yes
 
+au! BufWritePost $MYVIMRC source % " auto source when writing to init.vim
+
 call plug#begin('~/.config/nvim/autoload/plugged')
 	Plug 'morhetz/gruvbox'
 call plug#end()
